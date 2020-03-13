@@ -1,0 +1,148 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #39271D;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #B38E71;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+body {
+	background-image: url(http://www.baltana.com/files/wallpapers-17/Vintage-Paper-Texture-Wallpaper-42965.jpg);
+    background-repeat: repeat-y;
+}
+
+.footer {
+	width: 50%;
+	margin-left: 25%;
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
+	margin-top: 24px;
+}
+
+.container {
+	max-width: 720px;
+	margin: 24px auto 48px auto;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 2.5rem;
+}
+
+.row {
+	margin-top: 12px;
+}
+
+.column {
+	display: inline-block;
+	text-align: center;
+}
+
+figure {
+	overflow: hidden;
+}
+
+a p {
+	color: black;
+	margin-top: 8px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.column  img {
+	display: block;
+	width: 70%;
+	height: 500px;
+}
+
+.column img {
+	display: block;
+	width: 70%;
+	height: 500px;
+}
+
+.column img {
+	display: block;
+	width: 70%;
+	height: 500px;
+}
+
+.column img {
+	display: block;
+	width: 70%;
+	height: 500px;
+}
+
+.column img {
+	display: block;
+	width: 70%;
+	height: 500px;
+}
+
+.column img {
+	display: block;
+	width: 70%;
+	height: 500px;
+}
+
+.column img {
+	display: block;
+	width: 70%;
+	height: 500px;
+}
+
+.column img {
+	display: block;
+	width: 70%;
+	height: 500px;
+}
+
+.column img {
+	display: block;
+	width: 70%;
+	height: 500px;
+}
+
+/* CSS Image Hover. Created refering to Naoya's Pen: https://codepen.io/nxworld/pen/ZYNOBZ */
+/*Sepia*/
+.column#sepia img {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.column#sepia:hover img {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
+
+
+

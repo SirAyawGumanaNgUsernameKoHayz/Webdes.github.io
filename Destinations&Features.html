@@ -1,0 +1,282 @@
+<html>
+    <head>
+<title>Service</title>
+<link rel="stylesheet" type="text/css" href="">
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+       background-image:url("http://www.baltana.com/files/wallpapers-17/Vintage-Paper-Texture-Wallpaper-42965.jpg") ;
+    }
+    .container
+    {
+        position: relative;
+        width: 1200px;
+        height: 900px;
+        margin: 80px auto 0;
+        background: linear-gradient(45deg,#96705B ,#BA9A8E);
+
+    }
+    .container .box
+    {
+        position: relative;
+        width: calc(400px - 30px);
+        height: calc(300px - 30px);
+        background: #000;
+        float: left;
+        margin: 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        box-shadow: 0 5px 10px rgba(0,0,0,.8);
+    }
+    .container .box::before
+    {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transform: scaleX(0);
+        opacity: 0;
+        z-index: 1;
+    }
+    .container .box:hover:before
+    {
+         transform: scaleX(1);
+         opacity: 1;
+    }
+    .container .box::after
+    {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transform: scaleY(0);
+        opacity: 0;
+        z-index: 1;
+    }
+    .container .box:hover::after
+    {
+         transform: scaleY(1);
+         opacity: 1;
+    }
+    .container .box .imgBox
+    {
+        position: relative;
+    }
+    .container .box .imgBox img
+    {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+    }
+    .container .box:hover .imgBox img
+    {
+        opacity: .2;
+        transform: scale(1.2);
+    }
+    .container .box .content
+    {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+
+    }
+    .container .box .content h1,.click1
+    {
+        margin: 0 0 10px;
+        padding: 0;
+        color:#fff;
+        transition: 0.5s;
+        transform: translateY(-50px);
+        opacity: 0;
+        visibility: hidden;
+        
+    }
+    .container .box .content p
+    {
+        margin: 0;
+        padding: 0;
+        color:#fff;
+        transition: 0.5s;
+        transform: translateY(-50px);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .container .box:hover .content h1,
+    .container .box:hover .content .click1,
+    .container .box .content p
+    {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+        transition-delay: 0.2s;
+    }
+    .click
+    {
+        margin: 0;
+    padding: 0;
+    font-size: 5em;
+    color: #fff;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.2);
+    }
+    .back
+    {
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+    color:#ffafbd ;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.2);
+   
+    }
+    .click1
+    {
+        margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color:black ;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.2);
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #39271D;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #B38E71;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+    </style>
+</head>
+    <body background="black">
+        
+<ul>
+    <li><a href="#About">ABOUT</a></li>
+    <li><a href="#destinaton">DESTINATION</a></li>
+    <li><a href="#features">FEATURES</a></li>
+    <li><a href="#moments">MOMENTS</a></li>
+    <li><a href="#about us">ABOUT US</a></li>
+    <li><a href="#contact us">CONTACT US</a></li>
+  </ul>
+  <br>
+  <br>
+  <br>
+    <h1 class="click"><center><font color= white > DESTINATIONS</font></center></h1>
+        <div class="container">
+            <div class="box">
+                <div class="imgBox">
+                    
+                    <img src="https://www.roadaffair.com/wp-content/uploads/2019/10/aerial-view-night-makati-manila-philippines-shutterstock_521867962-1024x683.jpg">
+                </div>
+                <div class="content">
+                    <h1>MANILA</h1>
+                    <button onclick="window.location.href = 'http://127.0.0.1:5500/manila.html';" class="click1"> TOURIST SPOT </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://www.thepoortraveler.net/wp-content/uploads/2019/04/Stobosa-Colorful-Houses-Baguio.jpg">
+                </div>
+                <div class="content">
+                    <h1>BAGUIO</h1>
+                    <button onclick="window.location.href = 'http://127.0.0.1:5500/baguio.html';" class="click1"> TOURIST SPOT </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://windowseat.ph/wp-content/uploads/2017/01/videoblocks-aerial-view-of-mt-banahaw-quezon-province-philippines_bdtuhjjjb_thumbnail-full01.jpg">
+                </div>
+                <div class="content">
+                    <h1>QUEZON</h1><button onclick="window.location.href = 'http://127.0.0.1:5500/quezon.html';" class="click1"> TOURIST SPOT </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://free4kwallpapers.com/uploads/originals/2018/05/19/twin-lagoon-coron-palawan-wallpaper.jpg">
+                </div>
+                <div class="content">
+                    <h1>PALAWAN</h1><button onclick="window.location.href = 'http://127.0.0.1:5500/palawan.html';" class="click1"> TOURIST SPOT </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://c0.wallpaperflare.com/preview/859/758/444/philippines-cebu-city-morning-early.jpg">
+                </div>
+                <div class="content">
+                    <h1>CEBU</h1><button onclick="window.location.href = 'http://127.0.0.1:5500/cebu.html';" class="click1"> TOURIST SPOT </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://a.cdn-hotels.com/gdcs/production110/d1312/e70fda70-7dbb-49c1-ac96-052c88632c57.jpg">
+                </div>
+                <div class="content">
+                    <h1>BOHOL</h1><button onclick="window.location.href = 'http://127.0.0.1:5500/bohol.html';" class="click1"> TOURIST SPOT </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/HK_Portland_Street_Night.jpg">
+                </div>
+                <div class="content">
+                    <h1>HONGKONG</h1><button onclick="window.location.href = 'http://127.0.0.1:5500/hongkong.html';" class="click1"> TOURIST SPOT </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images7.alphacoders.com/461/thumb-1920-461286.jpg">
+                </div>
+                <div class="content">
+                    <h1>MACAU</h1><button onclick="window.location.href = 'http://127.0.0.1:5500/macau.html';" class="click1"> TOURIST SPOT </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://www.traveldailymedia.com/assets/2019/07/korea.jpg">
+                </div>
+                <div class="content">
+                    <h1>SOUTH KOREA</h1><button onclick="window.location.href = 'http://127.0.0.1:5500/korea.html';" class="click1"> TOURIST SPOT </button>
+                </div>
+            </div>
+            <button onclick="window.location.href = 'file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/service3.html';" class="click1"> TOURIST SPOT </button>
+</html>
